@@ -7,10 +7,7 @@
     "clean": "rimraf .turbo node_modules .next",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start",
-    "test": "vitest run",
-    "test-ui": "vitest --ui",
-    "test-watch": "vitest"
+    "start": "next start"
   },
   "dependencies": {
     "@adios-axios/eslint-config-custom": "workspace:*",
