@@ -1,10 +1,14 @@
-const colors = require('tailwindcss/colors');
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
-  content: ['./src/**/*.{ts,tsx}', '../../packages/**/*.{ts,tsx}'],
+  content: [
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx}'
+  ],
   theme: {
     container: {
       center: true,
@@ -50,15 +54,7 @@ module.exports = {
         card: {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))'
-        },
-        metal: colors.orange['300'],
-        crystal: colors.sky['300'],
-        quadium: colors.fuchsia['300'],
-        energy: colors.yellow['200'],
-        building: colors.orange['200'],
-        technology: colors.green['200'],
-        spacecraft: colors.cyan['200'],
-        planetaryDefense: colors.pink['200']
+        }
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -81,5 +77,5 @@ module.exports = {
       }
     }
   },
-  plugins: ['tailwindcss-animate']
-};
+  plugins: [require('tailwindcss-animate')]
+}
