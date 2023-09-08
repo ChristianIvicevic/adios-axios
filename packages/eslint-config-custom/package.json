@@ -1,0 +1,13 @@
+{
+  "name": "@adios-axios/eslint-config-custom",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "clean": "rimraf .turbo node_modules"
+  },
+  "devDependencies": {
+    "@vercel/style-guide": "5.0.1",
+    "eslint-config-turbo": "1.10.13",
+    "rimraf": "5.0.1"
+  }
+}
