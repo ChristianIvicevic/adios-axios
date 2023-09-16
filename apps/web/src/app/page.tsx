@@ -62,9 +62,13 @@ export default function Page() {
             <Link href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">
               <Code>XMLHttpRequest</Code>
             </Link>{' '}
-            in web browsers and the http module in Node environments. However, in today&apos;s modern
-            development landscape, this approach has been surpassed by the native Fetch API, which offers
-            consistent functionality across browsers, Node, and even other environments.
+            in web browsers and the{' '}
+            <Link href="https://nodejs.org/api/http.html">
+              <Code>http</Code>
+            </Link>{' '}
+            module in Node environments. However, in today&apos;s modern development landscape, this approach
+            has been surpassed by the native Fetch API, which offers consistent functionality across browsers,
+            Node, and even other environments.
           </P>
           <P>
             With the adoption of a unified API like Fetch, you can easily eliminate Axios as an additional
@@ -79,7 +83,7 @@ export default function Page() {
           </P>
         </section>
         <section>
-          <H2>The Fetch API is available across all modern environments</H2>
+          <H2>The Fetch API is available across all environments</H2>
           <P>
             Since the release of Node 18 in April 2022, the Fetch API, which had been implemented in browsers
             for over a half decade by that point,{' '}
@@ -92,7 +96,11 @@ export default function Page() {
               reached its end of life and is no longer maintained
             </Link>
             . Consequently, all LTS versions of Node, as well as other runtimes like Bun, now include the
-            Fetch API by default (see also <Link href="https://caniuse.com/mdn-api_fetch">Can I use...</Link>
+            Fetch API by default (see also <Link href="https://caniuse.com/mdn-api_fetch">Can I use...</Link>{' '}
+            and the{' '}
+            <Link href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API#browser_compatibility">
+              MDN Browser Compatibility on fetch
+            </Link>
             ).
           </P>
         </section>
@@ -111,8 +119,11 @@ export default function Page() {
           </P>
           <P>
             In contrast, the Axios implementation rejects the promise if the returned status code falls
-            outside the 2xx range, if no response is received, or if any other issues occur while setting up
-            the request (see also{' '}
+            outside the 2xx range (which is configurable via{' '}
+            <Link href="https://axios-http.com/docs/handling_errors">
+              <Code>validateStatus</Code>
+            </Link>
+            ), if no response is received, or if any other issues occur while setting up the request (see also{' '}
             <Link href="https://axios-http.com/docs/handling_errors">Handling Errors</Link> in the Axios
             docs).
           </P>
@@ -141,9 +152,9 @@ export default function Page() {
               <Code>tags</Code>
             </Link>{' '}
             that can be seamlessly integrated with the Fetch API. These options are processed by the
-            underlying server using a custom implementation to modify caching behavior. In contrast, Axios
-            lacks support for these new custom options, compelling developers to resort to less granular
-            caching alternatives in the form of{' '}
+            underlying server using a custom implementation of <Code>fetch</Code> to modify caching behavior.
+            In contrast, Axios lacks support for these new custom options, forcing developers to resort to
+            less granular caching alternatives in the form of{' '}
             <Link href="https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config">
               route segment configuration options
             </Link>
@@ -151,7 +162,7 @@ export default function Page() {
           </P>
         </section>
         <section>
-          <H2>Back to standard web APIs</H2>
+          <H2>Reusing standard web APIs</H2>
           <P>
             Unlike Axios, which introduces its own abstractions and API design, the Fetch API is a
             standardized web API built on classes and functions familiar to developers across various use
@@ -197,8 +208,12 @@ export default function Page() {
         <section>
           <H2>Migrating off of Axios to the Fetch API</H2>
           <P>
-            Unless you opt for a dedicated wrapper like <Code>ky</Code>, as mentioned earlier, you will need
-            to manually migrate certain features that Axios conveniently offers out of the box.
+            Unless you opt for a dedicated wrapper like{' '}
+            <Link href="https://github.com/sindresorhus/ky">
+              <Code>ky</Code>
+            </Link>
+            , as mentioned earlier, you will need to manually migrate certain features that Axios conveniently
+            offers out of the box.
           </P>
           <P>
             For request cancellation, you would need to utilize an{' '}
