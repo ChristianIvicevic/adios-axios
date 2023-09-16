@@ -1,9 +1,14 @@
 import type { ComponentProps, ReactNode } from 'react'
+import { ChevronsDown } from 'lucide-react'
 import { ThemeSwitcher } from '@/app/components.client'
 import { cn } from '@/lib/utils'
 
-function H1({ children }: { readonly children: ReactNode }) {
-  return <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">{children}</h1>
+function H1({ id, children }: { id?: string; readonly children: ReactNode }) {
+  return (
+    <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl" id={id}>
+      {children}
+    </h1>
+  )
 }
 
 function H2({ children }: { readonly children: ReactNode }) {
@@ -16,6 +21,10 @@ function H2({ children }: { readonly children: ReactNode }) {
 
 function P({ children }: { readonly children: ReactNode }) {
   return <p className="leading-7 [&:not(:first-child)]:mt-6">{children}</p>
+}
+
+function Strong({ children }: { readonly children: ReactNode }) {
+  return <strong className="font-medium text-foreground">{children}</strong>
 }
 
 function Link({ children, className, ...props }: ComponentProps<'a'>) {
@@ -42,19 +51,73 @@ function Code({ children }: { readonly children: ReactNode }) {
 export default function Page() {
   return (
     <div className="container relative">
-      <div className="flex items-center justify-between py-12">
-        <H1>Adios Axios 👋</H1>
+      <div className="fixed bottom-8 right-8">
         <ThemeSwitcher />
       </div>
-      <div className="mb-12 flex flex-col gap-8">
-        <section>
+      <div className="flex h-screen flex-col justify-between" style={{ height: '100svh' }}>
+        <div />
+        <section className="text-muted-foreground">
           <P>
-            Hello! Chances are, you&apos;ve arrived here because someone shared this page with you, suggesting
-            a shift away from <Link href="https://axios-http.com/">Axios</Link> in favor of the native{' '}
-            <Link href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">Fetch API</Link>. This
-            page presents a list of compelling reasons why making this transition is worth your consideration.
+            Do you need to send an HTTP request on the browser?{' '}
+            <Strong>
+              Use{' '}
+              <Link href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">
+                the native Fetch API
+              </Link>
+              .
+            </Strong>
+          </P>
+          <P>
+            Do you need to send an HTTP request in Node.js?{' '}
+            <Strong>
+              Use{' '}
+              <Link href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">
+                the native Fetch API
+              </Link>
+              .
+            </Strong>
+          </P>
+          <P>
+            Do you need an Axios-like API that is nicer than native fetch?{' '}
+            <Strong>
+              Use{' '}
+              <Link href="https://github.com/sindresorhus/ky">
+                <Code>ky</Code>
+              </Link>
+              .
+            </Strong>
+          </P>
+          <P>
+            Do you need the conveniences that Axios brings?{' '}
+            <Strong>
+              Also use{' '}
+              <Link href="https://github.com/sindresorhus/ky">
+                <Code>ky</Code>
+              </Link>
+              .
+            </Strong>
+          </P>
+          <P>
+            Axios was a godsend back when JavaScript was still a mess. But those days are over. The standard
+            Fetch API is now available in all major platforms. Thanks for everything Axios, but it is time to
+            say goodbye.
+          </P>
+          <P>
+            <Strong>Adios, Axios! 👋</Strong>
           </P>
         </section>
+        <a
+          className="flex flex-col items-center gap-4 py-8 text-muted-foreground transition-colors hover:text-foreground"
+          href="#why"
+        >
+          Why?
+          <ChevronsDown className="animate-bounce" />
+        </a>
+      </div>
+      <div className="py-12">
+        <H1 id="why">Why?</H1>
+      </div>
+      <div className="mb-12 flex flex-col gap-8">
         <section>
           <H2>TLDR?</H2>
           <P>
