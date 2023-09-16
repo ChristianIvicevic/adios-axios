@@ -214,6 +214,12 @@ export default function Page() {
             implemented as small, reusable functions that you can apply to response objects.
           </P>
         </section>
+        <footer className="border-t py-4">
+          <p className="text-sm text-muted-foreground">
+            Built by <Link href="https://github.com/ChristianIvicevic">Christian Ivicevic</Link>. The source
+            code is available on <Link href="https://github.com/ChristianIvicevic/adios-axios">GitHub</Link>.
+          </p>
+        </footer>
       </div>
     </div>
   )
