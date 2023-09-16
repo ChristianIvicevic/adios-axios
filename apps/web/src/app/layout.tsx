@@ -4,12 +4,15 @@ import { ThemeProvider } from '@/app/components.client'
 import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 
-export const dynamic = 'force-dynamic'
-
 export const metadata = {
-  title: {
-    default: 'Adios Axios',
-    template: '%s — Adios Axios'
+  title: 'Adios Axios',
+  description: 'Compelling reasons to replace Axios with the native Fetch API',
+  openGraph: {
+    title: 'Adios Axios',
+    description: 'Compelling reasons to replace Axios with the native Fetch API',
+    url: 'https://adios-axios.com',
+    locale: 'en_US',
+    type: 'website'
   }
 }
 
