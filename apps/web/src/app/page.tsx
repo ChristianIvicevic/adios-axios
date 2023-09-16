@@ -56,25 +56,15 @@ export default function Page() {
       </div>
       <div className="flex h-screen flex-col justify-between" style={{ height: '100svh' }}>
         <div />
-        <section className="text-muted-foreground">
+        <section className="py-12 text-muted-foreground">
           <P>
-            Do you need to send an HTTP request on the browser?{' '}
+            Do you need to send an HTTP request in JavaScript?{' '}
             <Strong>
               Use{' '}
               <Link href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">
                 the native Fetch API
               </Link>
-              .
-            </Strong>
-          </P>
-          <P>
-            Do you need to send an HTTP request in Node.js?{' '}
-            <Strong>
-              Use{' '}
-              <Link href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API">
-                the native Fetch API
-              </Link>
-              .
+              . Both on the browser and on the server.
             </Strong>
           </P>
           <P>
