@@ -54,7 +54,7 @@ export default function Page() {
       <div className="fixed bottom-8 right-8">
         <ThemeSwitcher />
       </div>
-      <div className="flex h-screen flex-col justify-between" style={{ height: '100svh' }}>
+      <div className="flex min-h-screen flex-col justify-between" style={{ minHeight: '100svh' }}>
         <div />
         <section className="pt-12 text-muted-foreground">
           <P>
