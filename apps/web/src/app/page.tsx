@@ -56,7 +56,7 @@ export default function Page() {
       </div>
       <div className="flex h-screen flex-col justify-between" style={{ height: '100svh' }}>
         <div />
-        <section className="py-12 text-muted-foreground">
+        <section className="pt-12 text-muted-foreground">
           <P>
             Do you need to send an HTTP request in JavaScript?{' '}
             <Strong>
