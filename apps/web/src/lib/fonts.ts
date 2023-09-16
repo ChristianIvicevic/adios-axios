@@ -1,6 +1,7 @@
-import { Saira } from 'next/font/google'
+import { Inter } from 'next/font/google'
 
-export const fontSans = Saira({
+export const fontSans = Inter({
+  display: 'swap',
   subsets: ['latin'],
   variable: '--font-sans'
 })
