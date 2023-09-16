@@ -93,7 +93,7 @@ export default function Page() {
             say goodbye.
           </P>
           <P>
-            <Strong>Adios, Axios! 👋</Strong>
+            <Strong>Adios, Axios 👋</Strong>
           </P>
         </section>
         <a
