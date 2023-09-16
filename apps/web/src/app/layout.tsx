@@ -1,5 +1,6 @@
 import '@/styles/globals.css'
 import type { ReactNode } from 'react'
+import { Analytics } from '@vercel/analytics/react'
 import { ThemeProvider } from '@/app/components.client'
 import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
@@ -23,6 +24,7 @@ export default function Layout({ children }: { readonly children: ReactNode }) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
