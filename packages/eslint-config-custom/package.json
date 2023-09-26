@@ -8,6 +8,6 @@
   "devDependencies": {
     "@vercel/style-guide": "5.0.1",
     "eslint-config-turbo": "1.10.14",
-    "rimraf": "5.0.1"
+    "rimraf": "5.0.4"
   }
 }
