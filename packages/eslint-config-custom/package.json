@@ -6,8 +6,8 @@
     "clean": "rimraf .turbo node_modules"
   },
   "devDependencies": {
-    "@vercel/style-guide": "5.0.1",
-    "eslint-config-turbo": "1.10.16",
+    "@vercel/style-guide": "5.1.0",
+    "eslint-config-turbo": "1.11.1",
     "rimraf": "5.0.5"
   }
 }
