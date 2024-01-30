@@ -57,8 +57,8 @@ importers:
         specifier: 1.0.2
         version: 1.0.2(@types/react@18.2.48)(react@18.2.0)
       '@types/node':
-        specifier: 20.11.5
-        version: 20.11.5
+        specifier: 20.11.10
+        version: 20.11.10
       '@types/react':
         specifier: 18.2.48
         version: 18.2.48
@@ -78,8 +78,8 @@ importers:
         specifier: 8.56.0
         version: 8.56.0
       lucide-react:
-        specifier: 0.312.0
-        version: 0.312.0(react@18.2.0)
+        specifier: 0.319.0
+        version: 0.319.0(react@18.2.0)
       next:
         specifier: 14.1.0
         version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
@@ -102,8 +102,8 @@ importers:
         specifier: 5.0.5
         version: 5.0.5
       tailwind-merge:
-        specifier: 2.2.0
-        version: 2.2.0
+        specifier: 2.2.1
+        version: 2.2.1
       tailwindcss:
         specifier: 3.4.1
         version: 3.4.1
@@ -328,6 +328,13 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
+
+  /@babel/runtime@7.23.9:
+    resolution: {integrity: sha512-0CX6F+BI2s9dkUqr08KFrAIZgNFj75rdBU/DjCyYLIaV/quFjkk6T+EJ2LkZHyZTbEV4L5p97mNkUsHl2wLFAw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.14.0
+    dev: false
 
   /@babel/template@7.22.5:
     resolution: {integrity: sha512-X7yV7eiwAxdj9k94NEylvbVHLiVG1nvzCV2EAowhxLTwODV1jl9UzZ48leOC0sH7OnuHrIkllaBgneUykIcZaw==}
@@ -1109,8 +1116,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node@20.11.5:
-    resolution: {integrity: sha512-g557vgQjUUfN76MZAN/dt1z3dzcUsimuysco0KeluHgrPdJXkP/XdAURgyO2W9fZWHRtRBiVKzKn8vyOAwlG+w==}
+  /@types/node@20.11.10:
+    resolution: {integrity: sha512-rZEfe/hJSGYmdfX9tvcPMYeYPW2sNl50nsw4jZmRcaG0HIAb0WYEpsB05GOb53vjqpyE9GUhlDQ4jLSoB5q9kg==}
     dependencies:
       undici-types: 5.26.5
     dev: false
@@ -3278,8 +3285,8 @@ packages:
     resolution: {integrity: sha512-65/Jky17UwSb0BuB9V+MyDpsOtXKmYwzhyl+cOa9XUiI4uV2Ouy/2voFP3+al0BjZbJgMBD8FojMpAf+Z+qn4A==}
     engines: {node: 14 || >=16.14}
 
-  /lucide-react@0.312.0(react@18.2.0):
-    resolution: {integrity: sha512-3UZsqyswRXjW4t+nw+InICewSimjPKHuSxiFYqTshv9xkK3tPPntXk/lvXc9pKlXIxm3v9WKyoxcrB6YHhP+dg==}
+  /lucide-react@0.319.0(react@18.2.0):
+    resolution: {integrity: sha512-IIbu4TfVI3yPI3ba/Li53mKeOd+WwcWI6+WcyoVdFLtrBfH88m2uQ/uTmtzBWt523HyxCFjWy3RFs0OxDFYm8w==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
@@ -4359,10 +4366,10 @@ packages:
       '@pkgr/core': 0.1.0
       tslib: 2.6.2
 
-  /tailwind-merge@2.2.0:
-    resolution: {integrity: sha512-SqqhhaL0T06SW59+JVNfAqKdqLs0497esifRrZ7jOaefP3o64fdFNDMrAQWZFMxTLJPiHVjRLUywT8uFz1xNWQ==}
+  /tailwind-merge@2.2.1:
+    resolution: {integrity: sha512-o+2GTLkthfa5YUt4JxPfzMIpQzZ3adD1vLVkvKE1Twl9UAhGsEbIZhHHZVRttyW177S8PDJI3bTQNaebyofK3Q==}
     dependencies:
-      '@babel/runtime': 7.23.5
+      '@babel/runtime': 7.23.9
     dev: false
 
   /tailwindcss-animate@1.0.7(tailwindcss@3.4.1):
