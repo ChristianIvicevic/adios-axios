@@ -1,9 +1,15 @@
-import '@/styles/globals.css'
-import type { ReactNode } from 'react'
-import { Analytics } from '@vercel/analytics/react'
+import './globals.css'
+import { Analytics } from '@vercel/analytics/next'
+import { Inter } from 'next/font/google'
+import { ReactNode } from 'react'
 import { ThemeProvider } from '@/app/components.client'
-import { fontSans } from '@/lib/fonts'
-import { cn } from '@/lib/utils'
+import { cn } from '@/utils'
+
+const fontSans = Inter({
+  display: 'swap',
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
 
 export const metadata = {
   title: 'Adios Axios',
@@ -13,11 +19,11 @@ export const metadata = {
     description: 'Compelling reasons to replace Axios with the native Fetch API',
     url: 'https://adios-axios.com',
     locale: 'en_US',
-    type: 'website'
-  }
+    type: 'website',
+  },
 }
 
-export default function Layout({ children }: { readonly children: ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>

@@ -1,9 +1,9 @@
-import type { ComponentProps, ReactNode } from 'react'
 import { ChevronsDown } from 'lucide-react'
+import { ComponentProps, ReactNode } from 'react'
 import { ThemeSwitcher } from '@/app/components.client'
-import { cn } from '@/lib/utils'
+import { cn } from '@/utils'
 
-function H1({ id, children }: { readonly id?: string; readonly children: ReactNode }) {
+function H1({ id, children }: { id?: string; children: ReactNode }) {
   return (
     <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl" id={id}>
       {children}
@@ -11,7 +11,7 @@ function H1({ id, children }: { readonly id?: string; readonly children: ReactNo
   )
 }
 
-function H2({ children }: { readonly children: ReactNode }) {
+function H2({ children }: { children: ReactNode }) {
   return (
     <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
       {children}
@@ -19,11 +19,11 @@ function H2({ children }: { readonly children: ReactNode }) {
   )
 }
 
-function P({ children }: { readonly children: ReactNode }) {
+function P({ children }: { children: ReactNode }) {
   return <p className="leading-7 [&:not(:first-child)]:mt-6">{children}</p>
 }
 
-function Strong({ children }: { readonly children: ReactNode }) {
+function Strong({ children }: { children: ReactNode }) {
   return <strong className="font-medium text-foreground">{children}</strong>
 }
 
@@ -40,7 +40,7 @@ function Link({ children, className, ...props }: ComponentProps<'a'>) {
   )
 }
 
-function Code({ children }: { readonly children: ReactNode }) {
+function Code({ children }: { children: ReactNode }) {
   return (
     <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
       {children}
@@ -48,7 +48,7 @@ function Code({ children }: { readonly children: ReactNode }) {
   )
 }
 
-export default function Page() {
+export default function HomePage() {
   return (
     <div className="container relative">
       <div className="fixed bottom-8 right-8">

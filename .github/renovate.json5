@@ -1,20 +1,13 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
-    "schedule:weekly",
-    ":disableRateLimiting",
-    ":semanticCommitsDisabled",
-    ":rebaseStalePrs"
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
+  extends: [
+    'config:best-practices',
+    'schedule:weekly',
+    ':disableRateLimiting',
+    ':semanticCommitsDisabled',
+    ':rebaseStalePrs',
+    ':pinDependencies',
+    ':pinDevDependencies',
+    'group:allNonMajor',
   ],
-  "packageRules": [
-    // Bunch up all non-major dependencies into a single PR. In the common case where the upgrades apply cleanly, this
-    // causes less noise and is resolved faster than starting a bunch of upgrades in parallel for what may turn out to
-    // be a suite of related packages all released at once.
-    {
-      "groupName": "all non-major dependencies",
-      "matchUpdateTypes": ["patch", "minor"],
-      "groupSlug": "all-minor-patch"
-    }
-  ]
 }
