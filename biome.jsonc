@@ -1,0 +1,72 @@
+{
+	"$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+	"vcs": {
+		"enabled": false,
+		"clientKind": "git",
+		"useIgnoreFile": true,
+		"defaultBranch": "main"
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"ignore": [
+			"**/.idea/**",
+			"**/.next/**",
+			"**/.docker/**",
+			"**/.cache/**",
+			"**/dist/**",
+			"**/node_modules/**"
+		]
+	},
+	"formatter": {
+		"enabled": true,
+		"lineWidth": 110
+	},
+	"organizeImports": {
+		"enabled": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"all": true,
+			"nursery": {
+				"useSortedClasses": {
+					"fix": "safe",
+					"level": "error",
+					"options": { "functions": ["cn"] }
+				}
+			},
+			"complexity": {
+				"noVoid": "off"
+			},
+			"correctness": {
+				"noNodejsModules": "off",
+				"noUndeclaredDependencies": "off"
+			},
+			"style": {
+				"noDefaultExport": "off",
+				"noImplicitBoolean": "off",
+				"noNamespaceImport": "off",
+				"useNamingConvention": "off",
+				"noParameterProperties": "off"
+			},
+			"suspicious": {
+				"noReactSpecificProps": "off",
+				"useAwait": "off"
+			}
+		}
+	},
+	"css": {
+		"formatter": {
+			"enabled": true
+		},
+		"linter": {
+			"enabled": true
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single",
+			"semicolons": "asNeeded"
+		}
+	}
+}

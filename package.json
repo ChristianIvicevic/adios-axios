@@ -1,37 +1,33 @@
 {
-  "name": "adios-axios",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev --turbo",
-    "lint": "next lint",
-    "start": "next start"
-  },
-  "dependencies": {
-    "@radix-ui/react-dropdown-menu": "2.1.2",
-    "@radix-ui/react-slot": "1.1.0",
-    "@types/node": "22.10.1",
-    "@types/react": "19.0.1",
-    "@types/react-dom": "19.0.2",
-    "@vercel/analytics": "1.4.1",
-    "@vercel/style-guide": "6.0.0",
-    "class-variance-authority": "0.7.1",
-    "clsx": "2.1.1",
-    "eslint": "8.57.1",
-    "eslint-config-next": "15.0.3",
-    "lucide-react": "0.462.0",
-    "next": "15.0.3",
-    "next-themes": "0.4.3",
-    "postcss": "8.4.49",
-    "prettier": "3.4.1",
-    "prettier-plugin-tailwindcss": "0.6.9",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
-    "tailwind-merge": "2.5.5",
-    "tailwindcss": "3.4.15",
-    "tailwindcss-animate": "1.0.7",
-    "typescript": "5.7.2"
-  },
-  "packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
+	"name": "adios-axios",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev --turbo",
+		"lint": "biome check .",
+		"start": "next start"
+	},
+	"dependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@radix-ui/react-dropdown-menu": "2.1.2",
+		"@radix-ui/react-slot": "1.1.0",
+		"@types/node": "22.10.1",
+		"@types/react": "19.0.1",
+		"@types/react-dom": "19.0.2",
+		"@vercel/analytics": "1.4.1",
+		"class-variance-authority": "0.7.1",
+		"clsx": "2.1.1",
+		"lucide-react": "0.462.0",
+		"next": "15.0.3",
+		"next-themes": "0.4.3",
+		"postcss": "8.4.49",
+		"react": "19.0.0",
+		"react-dom": "19.0.0",
+		"tailwind-merge": "2.5.5",
+		"tailwindcss": "3.4.15",
+		"tailwindcss-animate": "1.0.7",
+		"typescript": "5.7.2"
+	},
+	"packageManager": "pnpm@9.14.4+sha512.c8180b3fbe4e4bca02c94234717896b5529740a6cbadf19fa78254270403ea2f27d4e1d46a08a0f56c89b63dc8ebfd3ee53326da720273794e6200fcf0d184ab"
 }
