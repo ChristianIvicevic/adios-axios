@@ -21,9 +21,9 @@ export function ThemeSwitcher() {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
-				<Button className="w-9 px-0" size="sm" variant="outline">
-					<Sun className="dark:-rotate-90 rotate-0 scale-100 transition-all dark:scale-0" />
-					<Moon className="absolute rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+				<Button className="size-10" size="sm" variant="outline">
+					<Sun className="dark:-rotate-90 size-6 rotate-0 scale-100 transition-all dark:scale-0" />
+					<Moon className="absolute size-6 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
 					<span className="sr-only">Toggle theme</span>
 				</Button>
 			</DropdownMenuTrigger>
@@ -33,7 +33,7 @@ export function ThemeSwitcher() {
 						setTheme('light')
 					}}
 				>
-					<Sun className="mr-2 h-4 w-4" />
+					<Sun className="size-4" />
 					<span>Light</span>
 				</DropdownMenuItem>
 				<DropdownMenuItem
@@ -41,7 +41,7 @@ export function ThemeSwitcher() {
 						setTheme('dark')
 					}}
 				>
-					<Moon className="mr-2 h-4 w-4" />
+					<Moon className="size-4" />
 					<span>Dark</span>
 				</DropdownMenuItem>
 				<DropdownMenuItem
@@ -49,7 +49,7 @@ export function ThemeSwitcher() {
 						setTheme('system')
 					}}
 				>
-					<Laptop className="mr-2 h-4 w-4" />
+					<Laptop className="size-4" />
 					<span>System</span>
 				</DropdownMenuItem>
 			</DropdownMenuContent>

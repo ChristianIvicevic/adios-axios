@@ -1,5 +1,5 @@
 import { ThemeSwitcher } from '@/app/components.client'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils'
 import { ChevronsDown } from 'lucide-react'
 import type { ComponentProps, ReactNode } from 'react'
 
