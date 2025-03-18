@@ -20,7 +20,7 @@ function H2({ children }: { children: ReactNode }) {
 }
 
 function P({ children }: { children: ReactNode }) {
-	return <p className="leading-7 [&:not(:first-child)]:mt-6">{children}</p>
+	return <p className="not-first:mt-6 leading-7">{children}</p>
 }
 
 function Strong({ children }: { children: ReactNode }) {
