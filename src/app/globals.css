@@ -42,6 +42,7 @@
 	margin-inline: auto;
 	padding-inline: 2rem;
 
+	/* biome-ignore lint/correctness/noUnknownFunction: Tailwind v4 */
 	@media (width >= theme(--breakpoint-sm)) {
 		max-width: none;
 	}
