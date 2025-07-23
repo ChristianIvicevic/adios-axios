@@ -1,9 +1,9 @@
 import './globals.css'
-import { ThemeProvider } from '@/app/components.client'
-import { cn } from '@/lib/utils'
 import { Analytics } from '@vercel/analytics/next'
 import { Inter } from 'next/font/google'
 import type { ReactNode } from 'react'
+import { ThemeProvider } from '@/app/components.client'
+import { cn } from '@/lib/utils'
 
 const fontSans = Inter({
 	display: 'swap',
