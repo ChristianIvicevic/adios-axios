@@ -1,7 +1,7 @@
-import { ThemeSwitcher } from '@/app/components.client'
-import { cn } from '@/lib/utils'
 import { ChevronsDown } from 'lucide-react'
 import type { ComponentProps, ReactNode } from 'react'
+import { ThemeSwitcher } from '@/app/components.client'
+import { cn } from '@/lib/utils'
 
 function H1({ id, children }: { id?: string; children: ReactNode }) {
 	return (

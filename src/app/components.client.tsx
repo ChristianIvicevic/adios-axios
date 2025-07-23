@@ -1,5 +1,8 @@
 'use client'
 
+import { Laptop, Moon, Sun } from 'lucide-react'
+import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes'
+import type { ComponentPropsWithRef } from 'react'
 import { Button } from '@/components/ui/button'
 import {
 	DropdownMenu,
@@ -7,9 +10,6 @@ import {
 	DropdownMenuItem,
 	DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-import { Laptop, Moon, Sun } from 'lucide-react'
-import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes'
-import type { ComponentPropsWithRef } from 'react'
 
 export function ThemeProvider({ children, ...props }: ComponentPropsWithRef<typeof NextThemesProvider>) {
 	return <NextThemesProvider {...props}>{children}</NextThemesProvider>
