@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.1.2/schema.json",
+	"$schema": "https://biomejs.dev/schemas/2.2.3/schema.json",
 	"vcs": {
 		"enabled": false,
 		"clientKind": "git",
@@ -8,15 +8,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": [
-			"**",
-			"!**/.idea/**",
-			"!**/.next/**",
-			"!**/.docker/**",
-			"!**/.cache/**",
-			"!**/dist/**",
-			"!**/node_modules/**"
-		]
+		"includes": ["**", "!**/.idea", "!**/.next", "!**/.docker", "!**/.cache", "!**/dist", "!**/node_modules"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -38,7 +30,8 @@
 			},
 			"correctness": {
 				"noNodejsModules": "off",
-				"noUndeclaredDependencies": "off"
+				"noUndeclaredDependencies": "off",
+				"useUniqueElementIds": "off"
 			},
 			"style": {
 				"noDefaultExport": "off",
@@ -48,6 +41,7 @@
 			},
 			"suspicious": {
 				"noReactSpecificProps": "off",
+				"noUnknownAtRules": "off",
 				"useAwait": "off"
 			},
 			"performance": {
