@@ -9,18 +9,18 @@
 		"start": "next start"
 	},
 	"dependencies": {
-		"@biomejs/biome": "2.2.3",
+		"@biomejs/biome": "2.2.4",
 		"@radix-ui/react-dropdown-menu": "2.1.16",
 		"@radix-ui/react-slot": "1.2.3",
 		"@tailwindcss/postcss": "4.1.13",
-		"@types/node": "22.18.1",
-		"@types/react": "19.1.12",
+		"@types/node": "22.18.4",
+		"@types/react": "19.1.13",
 		"@types/react-dom": "19.1.9",
 		"@vercel/analytics": "1.5.0",
 		"class-variance-authority": "0.7.1",
 		"clsx": "2.1.1",
-		"lucide-react": "0.543.0",
-		"next": "15.5.2",
+		"lucide-react": "0.544.0",
+		"next": "15.5.3",
 		"next-themes": "0.4.6",
 		"postcss": "8.5.6",
 		"react": "19.1.1",
@@ -30,5 +30,5 @@
 		"tailwindcss-animate": "1.0.7",
 		"typescript": "5.9.2"
 	},
-	"packageManager": "pnpm@10.15.1+sha512.34e538c329b5553014ca8e8f4535997f96180a1d0f614339357449935350d924e22f8614682191264ec33d1462ac21561aff97f6bb18065351c162c7e8f6de67"
+	"packageManager": "pnpm@10.16.1+sha512.0e155aa2629db8672b49e8475da6226aa4bdea85fdcdfdc15350874946d4f3c91faaf64cbdc4a5d1ab8002f473d5c3fcedcd197989cf0390f9badd3c04678706"
 }
