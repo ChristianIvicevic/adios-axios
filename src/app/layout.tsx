@@ -1,5 +1,6 @@
 import './globals.css'
 import { Analytics } from '@vercel/analytics/next'
+import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import type { ReactNode } from 'react'
 import { ThemeProvider } from '@/app/components.client'
@@ -11,7 +12,7 @@ const fontSans = Inter({
 	variable: '--font-sans',
 })
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: 'Adios Axios',
 	description: 'Compelling reasons to replace Axios with the native Fetch API',
 	openGraph: {
