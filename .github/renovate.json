@@ -3,7 +3,7 @@
 	"extends": [
 		"config:best-practices",
 		"customManagers:biomeVersions",
-		"schedule:weekly",
+		"schedule:monthly",
 		":disableRateLimiting",
 		":semanticCommitsDisabled",
 		":rebaseStalePrs",
